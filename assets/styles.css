@@ -41,25 +41,31 @@ nav {
 }
 
 @media only screen and (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        justify-content: flex-start;
-        height:23vh;
-        padding: 5px;
-    }
-
-    form {
-        text-align: center;
-    }
-    
-    .notes {
-      justify-content: center;
-    }
-
-    .notes__button {
-        margin-top: 10px;
-    }
+  nav {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 23vh;
+    padding: 5px;
   }
+
+  form {
+    text-align: center;
+  }
+
+  .notes {
+    justify-content: center;
+  }
+
+  .notes__button {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  nav {
+    height: 30vh;
+  }
+}
 
 .note {
   background-color: #f4f0bb;
