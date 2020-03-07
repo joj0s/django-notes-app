@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'styles.css' %}" />
+    <title>Django Notes</title>
+  </head>
+  <body>
+    <nav>
+      <h1>Django Notes</h1>
+      <div class="notes__form">
+        <form action="" method="POST" class="site-form">
+          {% csrf_token %} {{ form }}
+          <input class="notes__button" type="submit" value="Add Note" />
+        </form>
+      </div>
+    </nav>
+    <div class="wrapper">
+      <div class="notes">
+        {% for note in notes %}
+        <div class="note">
+          <p class="note__text">{{ note.text }}</p>
+          <p class="note__date">{{ note.date }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>

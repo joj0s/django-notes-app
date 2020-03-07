@@ -1,0 +1,106 @@
+body {
+  background: #1c3144;
+  font-family: "metropolis";
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  height: 8vh;
+}
+
+.notes__form {
+  padding: 20px;
+}
+
+#id_text {
+  margin-left: 5px;
+}
+
+.notes__button {
+  border: 1px solid #596f62;
+  background-color: #87c38f;
+  padding: 7px 9px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.notes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        justify-content: flex-start;
+        height:23vh;
+        padding: 5px;
+    }
+
+    form {
+        text-align: center;
+    }
+    
+    .notes {
+      justify-content: center;
+    }
+
+    .notes__button {
+        margin-top: 10px;
+    }
+  }
+
+.note {
+  background-color: #f4f0bb;
+  color: black;
+  padding: 5px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  min-width: 230px;
+}
+
+.note__text {
+  font-family: metropolis-bold;
+}
+
+.note__date {
+  font-family: "metropolis-light";
+  color: rgb(87, 86, 86);
+}
+
+@font-face {
+  font-family: "metropolis-bold";
+  src: url("fonts/metropolis-semibold-webfont.woff2") format("woff2"),
+    url("fonts/metropolis-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "metropolis";
+  src: url("fonts/metropolis-regular-webfont.woff2") format("woff2"),
+    url("fonts/metropolis-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "metropolis-light";
+  src: url("fonts/metropolis-light-webfont.woff2") format("woff2"),
+    url("fonts/metropolis-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
