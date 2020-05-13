@@ -3,10 +3,14 @@ asgiref==3.2.3
 attrs==19.3.0
 black==19.10b0
 Click==7.0
+dj-database-url==0.5.0
 Django==3.0.4
+django-heroku==0.3.1
 pathspec==0.7.0
+psycopg2==2.8.5
 pytz==2019.3
 regex==2020.2.20
 sqlparse==0.3.1
 toml==0.10.0
 typed-ast==1.4.1
+whitenoise==5.0.1
